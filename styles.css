@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+nav {
+    padding-left: 3%;
+    padding-right: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    font-size: 25px;
+    display: flex;
+    list-style-type: none;
+    gap: 24px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
