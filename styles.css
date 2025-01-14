@@ -46,7 +46,7 @@ a {
     color: white;
     gap: 40px;
     position: relative; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); /* Creates a subtle shadow */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); 
     
  }
 
@@ -87,8 +87,10 @@ a {
     height: 100px;
  }
 
- .about {
-    padding-top: 20px;
+ .section {
+   border-bottom: 2px solid red;
+   padding-top: 28px;
+   padding-bottom: 28px;
  }
  
  .about-content {
@@ -98,13 +100,13 @@ a {
  }
 
  .content {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: white;
  }
 
  .section-title {
-    font-size: 36px;
+    font-size: 44px;
     font-weight: bold;
     margin-bottom: 20px;
  }
@@ -116,6 +118,7 @@ a {
 
  .about-us-text {
     margin: 15px 15px 15px 0px;
+    font-size: 18px;
  }
 
  .up, .down{
@@ -131,20 +134,62 @@ a {
  }
 
  .text-block {
-    width: 60%;
+    width: 50%;
  }
 
-
-
-
+ .services {
+   padding-top: 20px;
+ }
 
  .about-img {
     max-width: 600px;
     max-height: auto;
     min-width: 400px;
     min-height: auto;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Creates a subtle shadow */
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2); 
  }
+
+ .card-container {
+   display: grid;
+   align-items: center;
+   justify-content: center;
+   gap: 36px;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+   padding-top: 20px;
+   padding-left: 80px;
+   padding-right: 80px;
+   padding-bottom: 40px;
+ }
+
+ .card {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   padding: 24px;
+   background-color: #dadada;
+   height: 320px;
+   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2); 
+   font-size: 16px;
+ }
+
+ .card:hover {
+   background-color: #ea2227;
+   color: white;
+ }
+
+ .card:hover .card-title {
+   border-bottom: 1px solid white
+ }
+
+ .card-title {
+   font-size: 18px;
+   font-weight: bold;
+   border-bottom: 1px solid black;
+   padding-bottom: 5px;
+ }
+
+ 
+
 
  .sign-up-btn {
    align-items: center;
