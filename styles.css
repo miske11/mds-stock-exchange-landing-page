@@ -77,6 +77,7 @@ a {
  .mission-text {
     font-size: 40px;
     font-weight: bold;
+    min-width: 450px;
  }
 
  .cta-text {
@@ -84,6 +85,10 @@ a {
     font-weight: bold;
     text-align: center;
  }
+
+ .call-to-action .sign-up-btn {
+   max-width: 150px;
+}
 
  .call-to-action {
    width: 45%; 
@@ -184,7 +189,9 @@ a {
 .content-container {
    display: flex;
    justify-content: center;
+   align-items: start;
    gap: 36px;
+   flex-wrap: wrap;
 }
 
 .form-container {
@@ -197,6 +204,9 @@ a {
    flex-direction: column;
    gap: 12px;
    align-items: start;
+   padding-left: 20px;
+   padding-right: 20px;
+   align-items: center;
  }
 
  .form-element {
@@ -209,7 +219,6 @@ a {
 
  .social-media-container {
    display: flex;
-   flex-direction: column;
    gap: 8px;
    justify-content: center;
  }
@@ -260,8 +269,20 @@ a {
    height: 120px;
 }
 
-.call-to-action .sign-up-btn {
-   max-width: 150px;
+
+
+.contact-right {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
+
+.contact-card {
+   background-color: #dadada;
+   padding: 10px;
+   font-weight: bold;
+   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2); 
+
 }
 
 .form-button, .sign-up-btn {
@@ -281,6 +302,14 @@ a {
    background-color: black;
    color: white;
    cursor: pointer;
+ }
+
+ input:invalid:not(:placeholder-shown) {
+   border: 2px solid red;
+ }
+
+ input, textarea {
+   border: 2px solid gray;
  }
 
  /* services */
@@ -324,3 +353,8 @@ a {
    padding-bottom: 5px;
  }
 
+/* footer */
+
+footer {
+   background-color: black;
+}
