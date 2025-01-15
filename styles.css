@@ -1,5 +1,9 @@
 /* navbar styling */
 
+html {
+   scroll-padding-top: 80px; 
+ }
+
 nav {
     position: sticky;
     top: 0;
@@ -12,17 +16,25 @@ nav {
     z-index: 9000;
 }
 
-ul {
-    font-size: 25px;
+.nav-list {
+    font-size: 22px;
+    font-weight: bold;
     display: flex;
     list-style-type: none;
     gap: 24px;
+}
+
+.nav-list-el:hover a {
+   color: gray;
+   cursor: pointer;
 }
 
 a {
     color: white;
     text-decoration: none;
 }
+
+
 
 #nav-logo {
    height: 100px;
@@ -46,8 +58,7 @@ a {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
-    /* height: 40vh; */
-    padding: 5%;
+    padding: 6%;
     align-items: center;
     justify-content: space-around;
     color: white;
@@ -71,10 +82,12 @@ a {
  .cta-text {
     font-size: 25px;
     font-weight: bold;
+    text-align: center;
  }
 
  .call-to-action {
-    display: flex;
+   width: 45%; 
+   display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
@@ -93,8 +106,8 @@ a {
  /* content styling */
 
  .content {
-   padding-left: 15%;
-   padding-right: 15%;
+   padding-left: 10%;
+   padding-right: 10%;
    background-color: white;
 }
 
@@ -131,16 +144,19 @@ a {
  }
 
  .about-us-text {
-    margin: 15px 15px 15px 0px;
     font-size: 18px;
+    margin-bottom: 16px;
+    min-width: 300px;
  }
 
  .up, .down{
     display: flex;
-    gap: 36px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    gap: 24px;
+    min-width: 300px;
  }
 
  .down {
@@ -148,7 +164,8 @@ a {
  }
 
  .text-block {
-    width: 50%;
+    width: 55%;
+
  }
 
  .services {
@@ -156,11 +173,10 @@ a {
  }
 
  .about-img {
-    max-width: 600px;
-    max-height: auto;
-    min-width: 400px;
-    min-height: auto;
-    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2); 
+   width: 40%;
+   height: auto;
+   min-width: 300px;
+   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2); 
  }
 
  /* contact us */
@@ -244,7 +260,11 @@ a {
    height: 120px;
 }
 
-.form-button {
+.call-to-action .sign-up-btn {
+   max-width: 150px;
+}
+
+.form-button, .sign-up-btn {
    width: 100%; 
    max-width: 100px; 
    padding: 10px;
@@ -257,7 +277,7 @@ a {
    border-radius: 30px;
  }
 
- .form-button:hover {
+ .form-button:hover, .sign-up-btn:hover{
    background-color: black;
    color: white;
    cursor: pointer;
@@ -272,8 +292,8 @@ a {
    gap: 36px;
    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
    padding-top: 20px;
-   padding-left: 80px;
-   padding-right: 80px;
+   padding-left: 5%;
+   padding-right: 5%;
    padding-bottom: 40px;
  }
 
@@ -304,106 +324,3 @@ a {
    padding-bottom: 5px;
  }
 
- /* button style */
-
-
- .sign-up-btn {
-   align-items: center;
-   appearance: none;
-   background-clip: padding-box;
-   background-color: initial;
-   background-image: none;
-   border-style: none;
-   box-sizing: border-box;
-   color: #fff;
-   cursor: pointer;
-   display: inline-block;
-   flex-direction: row;
-   flex-shrink: 0;
-   font-family: Eina01,sans-serif;
-   font-size: 16px;
-   font-weight: 800;
-   justify-content: center;
-   line-height: 24px;
-   margin: 0;
-   min-height: 64px;
-   outline: none;
-   overflow: visible;
-   padding: 19px 26px;
-   pointer-events: auto;
-   position: relative;
-   text-align: center;
-   text-decoration: none;
-   text-transform: none;
-   user-select: none;
-   -webkit-user-select: none;
-   touch-action: manipulation;
-   vertical-align: middle;
-   width: auto;
-   word-break: keep-all;
-   z-index: 0;
- }
- 
- @media (min-width: 768px) {
-   .sign-up-btn {
-     padding: 19px 32px;
-   }
- }
- 
- .sign-up-btn:before,
- .sign-up-btn:after {
-   border-radius: 80px;
- }
- 
- .sign-up-btn:before {
-   background-color: rgba(31, 7, 2, 0.32);
-   content: "";
-   display: block;
-   height: 100%;
-   left: 0;
-   overflow: hidden;
-   position: absolute;
-   top: 0;
-   width: 100%;
-   z-index: -2;
- }
- 
- .sign-up-btn:after {
-   background-color: initial;
-   background-image: linear-gradient(92.83deg, #c21812 0, #990d0d 100%);
-   bottom: 4px;
-   content: "";
-   display: block;
-   left: 4px;
-   overflow: hidden;
-   position: absolute;
-   right: 4px;
-   top: 4px;
-   transition: all 100ms ease-out;
-   z-index: -1;
- }
- 
- .sign-up-btn:hover:not(:disabled):after {
-   bottom: 0;
-   left: 0;
-   right: 0;
-   top: 0;
-   transition-timing-function: ease-in;
- }
- 
- .sign-up-btn:active:not(:disabled) {
-   color: #ccc;
- }
- 
- .sign-up-btn:active:not(:disabled):after {
-   background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
-   bottom: 4px;
-   left: 4px;
-   right: 4px;
-   top: 4px;
- }
- 
- .sign-up-btn:disabled {
-   cursor: default;
-   opacity: .24;
- }
