@@ -1,3 +1,4 @@
+/* navbar styling */
 
 nav {
     position: sticky;
@@ -22,6 +23,12 @@ a {
     color: white;
     text-decoration: none;
 }
+
+#nav-logo {
+   height: 100px;
+}
+
+/* header styling */
 
 #background-video {
     width: 100vw;
@@ -83,32 +90,39 @@ a {
     font-weight: bold;
  }
 
- #nav-logo {
-    height: 100px;
- }
+ /* content styling */
+
+ .content {
+   padding-left: 15%;
+   padding-right: 15%;
+   background-color: white;
+}
+
+  /* section styling */
 
  .section {
    border-bottom: 2px solid red;
    padding-top: 28px;
    padding-bottom: 28px;
  }
- 
+
+ .section:last-of-type {
+   border: 0;
+ }
+
+ /* about */
  .about-content {
     display: flex;
     flex-direction: column;
     gap: 24px;
  }
 
- .content {
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: white;
- }
 
  .section-title {
     font-size: 44px;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: center;
  }
 
  .section-subtitle {
@@ -149,6 +163,108 @@ a {
     box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2); 
  }
 
+ /* contact us */
+
+.content-container {
+   display: flex;
+   justify-content: center;
+   gap: 36px;
+}
+
+.form-container {
+   width: 100%;
+   max-width: 500px;
+}
+
+ .form-container form{
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   align-items: start;
+ }
+
+ .form-element {
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+   width: 100%;
+ }
+
+
+ .social-media-container {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   justify-content: center;
+ }
+
+ .socials-image {
+   background-color: #ea2227;
+   padding: 10px;
+   display: flex;
+   align-items: center;
+ }
+
+ .socials-image svg {
+   width: 60px;
+   height: 60px;
+   background-color: #ea2227;
+   fill: white;
+   
+ }
+
+.socials-image:hover svg{
+   background-color: black;
+   cursor: pointer;
+}
+
+.socials-image:hover {
+   background-color: black;
+   cursor: pointer;
+}
+
+.form-element label {
+   font-weight: bold;
+   font-size: 15px;
+   color: rgb(70, 70, 70);
+}
+
+.form-element input, .form-element textarea {
+   width: 100%;
+   max-width: 100%;
+   font-size: 16px;
+}
+
+.form-element input {
+   width: 70%;
+   height: 32px;
+}
+
+.form-element textarea {
+   height: 120px;
+}
+
+.form-button {
+   width: 100%; 
+   max-width: 100px; 
+   padding: 10px;
+   font-size: 16px;
+   font-weight: bold;
+   justify-self: start;
+   background-color: #ea2227;
+   border: 0;
+   color: white;
+   border-radius: 30px;
+ }
+
+ .form-button:hover {
+   background-color: black;
+   color: white;
+   cursor: pointer;
+ }
+
+ /* services */
+
  .card-container {
    display: grid;
    align-items: center;
@@ -188,7 +304,7 @@ a {
    padding-bottom: 5px;
  }
 
- 
+ /* button style */
 
 
  .sign-up-btn {
