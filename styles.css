@@ -44,7 +44,7 @@ a {
 
 /* header styling */
 
-#background-video {
+video {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -152,7 +152,7 @@ a {
  }
 
  .about-us-text {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 16px;
     min-width: 300px;
  }
@@ -408,3 +408,7 @@ footer .socials-image svg {
  footer .socials-image svg:hover {
    fill: red;
  }
+
+footer a:hover {
+   color: #dadada;
+}
