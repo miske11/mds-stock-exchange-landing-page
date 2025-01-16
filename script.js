@@ -33,3 +33,12 @@ function clearInputs(form) {
   const textArea = form.querySelector("textarea");
   textArea.value = "";
 }
+
+
+const burgerMenu = document.getElementById('burger-menu');
+const navLinks = document.querySelector('.nav-list');
+
+burgerMenu.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  burgerMenu.classList.toggle('toggle');
+});
