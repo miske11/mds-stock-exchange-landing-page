@@ -37,7 +37,9 @@ a {
 
 
 #nav-logo {
-   height: 100px;
+   height: 80px;
+   margin-left: 20px;
+   margin: 10px;
 }
 
 /* header styling */
@@ -114,6 +116,7 @@ a {
    padding-left: 10%;
    padding-right: 10%;
    background-color: white;
+   padding-bottom: 3%;
 }
 
   /* section styling */
@@ -189,7 +192,7 @@ a {
 .content-container {
    display: flex;
    justify-content: center;
-   align-items: start;
+   align-items: center;
    gap: 36px;
    flex-wrap: wrap;
 }
@@ -204,9 +207,11 @@ a {
    flex-direction: column;
    gap: 12px;
    align-items: start;
-   padding-left: 20px;
-   padding-right: 20px;
+   padding: 15px;
    align-items: center;
+   background-color: #dadada;
+   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2); 
+
  }
 
  .form-element {
@@ -228,6 +233,8 @@ a {
    padding: 10px;
    display: flex;
    align-items: center;
+   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2); 
+
  }
 
  .socials-image svg {
@@ -269,8 +276,6 @@ a {
    height: 120px;
 }
 
-
-
 .contact-right {
    display: flex;
    flex-direction: column;
@@ -296,6 +301,7 @@ a {
    border: 0;
    color: white;
    border-radius: 30px;
+   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2); 
  }
 
  .form-button:hover, .sign-up-btn:hover{
@@ -357,4 +363,48 @@ a {
 
 footer {
    background-color: black;
+   color: white;
+   display: flex;
+   align-items: start;
+   justify-content: space-around;
+   padding: 10px;
 }
+
+footer ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+footer li {
+   margin-bottom: 6px;
+   font-size: 14px;
+}
+
+.footer-company, .footer-privacy {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+}
+
+.footer-title {
+   font-weight: bold;
+   margin-bottom: 12px;
+   font-size: 15px;
+   text-align: center;
+}
+
+footer .socials-image {
+   background-color: black;
+   padding: 0;
+}
+
+footer .socials-image svg {
+   width: 60px;
+   height: 60px;
+   fill: white;
+   background-color: black;
+ }
+
+ footer .socials-image svg:hover {
+   fill: red;
+ }
