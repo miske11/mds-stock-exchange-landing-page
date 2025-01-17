@@ -1,5 +1,7 @@
 const userForm = document.querySelector("#sign-up-form");
 
+//listener that checks if all form elements are filled or valid before proceeding
+
 userForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -34,11 +36,19 @@ function clearInputs(form) {
   textArea.value = "";
 }
 
+// burger menu logic 
 
 const burgerMenu = document.getElementById('burger-menu');
 const navLinks = document.querySelector('.nav-list');
 
 burgerMenu.addEventListener('click', () => {
   navLinks.classList.toggle('active');
-  burgerMenu.classList.toggle('toggle');
+});
+
+//listener that closes the burger menu after the link inside it is clicked
+
+navLinks.addEventListener('click', (e) => {
+  if (e.target.tagName === 'A') {
+    navLinks.classList.remove('active');
+  }
 });
