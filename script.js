@@ -27,6 +27,8 @@ userForm.addEventListener("submit", (e) => {
   }
 });
 
+// function that clears inputs of all elements inside a form
+
 function clearInputs(form) {
   const inputs = form.querySelectorAll("input[required]");
   inputs.forEach((input) => {

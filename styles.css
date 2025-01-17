@@ -120,8 +120,7 @@ video {
 
 .section {
   border-bottom: 2px solid red;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding: 28px 0;
 }
 
 .section:last-of-type {
@@ -150,7 +149,6 @@ video {
 .about-us-text {
   font-size: 20px;
   margin-bottom: 16px;
-  min-width: 200px;
 }
 
 .up,
@@ -172,15 +170,16 @@ video {
   width: 55%;
 }
 
-.services {
-  padding-top: 20px;
-}
-
 .about-img {
   width: 40%;
   height: auto;
   min-width: 300px;
+  max-width: 450px;
   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+#mission-text, #vision-text {
+  font-style: italic;
 }
 
 /* contact us */
@@ -313,7 +312,17 @@ textarea {
   border: 2px solid gray;
 }
 
+.section-text {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
 /* services */
+
+.services {
+  padding-top: 20px;
+}
 
 .card-container {
   display: grid;
@@ -333,7 +342,6 @@ textarea {
   gap: 16px;
   padding: 24px;
   background-color: #dadada;
-  height: 320px;
   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
   font-size: 16px;
 }
@@ -360,7 +368,7 @@ footer {
   background-color: black;
   color: white;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-around;
   padding: 10px;
 }
@@ -430,6 +438,8 @@ footer a:hover {
 }
 
 @media (max-width: 930px) {
+  /* nav */
+
   .burger {
     display: flex;
   }
@@ -470,6 +480,8 @@ footer a:hover {
     padding-left: 0;
   }
 
+  /* header */
+
   .mission-statement {
     display: flex;
     flex-direction: column;
@@ -484,6 +496,55 @@ footer a:hover {
   .cta-text {
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
+  }
+
+  /* about */
+
+  .text-block {
+    width: 80%;
+    min-width: 300px;
+  }
+
+  .about-img {
+    width: 80%;
+    height: auto;
+    min-width: 300px;
+    max-width: 450px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .about-us-text {
+    font-size: 16px;
+    margin-bottom: 16px;
+    min-width: 200px;
+  }
+
+  /* services */
+
+  .card-container {
+    padding: 0;
+  }
+
+  /* footer */
+
+  footer .socials-image svg {
+    width: 40px;
+    height: 40px;
+    fill: white;
+    background-color: black;
+  }
+
+  .footer-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  footer li {
+    margin-bottom: 6px;
+    font-size: 10px;
     text-align: center;
   }
 }
